@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 #{title}
+  p are u sure u want to delete 
+    strong #{book.title}
+  form(method='POST' action='')
+      div.form-group
+        input(type='hidden',name='bookid', required='true', value=book._id )
+
+      button.btn.btn-primary(type='submit') Delete
+ 
+    
+
